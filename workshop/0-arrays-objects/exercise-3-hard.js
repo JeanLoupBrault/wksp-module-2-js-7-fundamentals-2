@@ -10,3 +10,15 @@ const colors = ["red", "orange", "yellow", "green", "pink", "black", "gray", "bl
 
 // You must console the colors array.
 // NO for loops!
+const tempArr = colors.map(color => color);
+
+tempArr.forEach((color) => {
+    const visibleSpec = ['red', 'orange', 'yellow', 'green', 'blue', 'violet'];
+
+    if (!visibleSpec.includes(color)) {
+        const currentPos = colors.indexOf(color);
+        colors.splice(currentPos, 1);
+    }
+});
+
+colors.forEach((item) => console.log(item));

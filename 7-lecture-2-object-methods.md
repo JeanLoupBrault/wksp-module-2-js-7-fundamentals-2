@@ -26,6 +26,11 @@ Now I am interested in the average age of my friends.
 ```js
 // Example - I need to display just the names in a list
 const friendsAge = { 'Kevin': 32, 'Rick': 60, 'Morty': 14, 'Jerry': 35 }
+const friendNames = Object.keys(friendsAge);
+friendNames.forEach(friend => {
+    console.log(friendsAge[friend]);
+});
+
 ```
 
 ---
@@ -35,6 +40,9 @@ const friendsAge = { 'Kevin': 32, 'Rick': 60, 'Morty': 14, 'Jerry': 35 }
 ```js
 // Example - I need to display just the names in a list
 const friendsAge = { 'Kevin': 32, 'Rick': 60, 'Morty': 14, 'Jerry': 35 }
+
+const age = Object.values(friendsAge);
+
 ```
 
 ---

@@ -21,13 +21,16 @@ var favoriteDessert = {
 
 // Above is an object with the results of a poll.
 // Write a script that outputs the following:
-
+const dessertArr = Object.values(favoriteDessert);
+console.log(dessertArr);
 // A)
 // the desserts ranked from most popular to least popular.
 // e.g. 1. <DESSERT_NAME>
 //      2. <DESSERT_NAME>
 //      ...
-
+const dessertsArray = [];
+const countedDesserts = ();
+const rankedDesserts = [];`
 
 // B)
 // The names of those that said the same desserts. Output the list in
@@ -35,3 +38,28 @@ var favoriteDessert = {
 // e.g. - brownies: <NAME>, <NAME>, ...
 //      - ice-cream: <NAME>, <NAME>, <NAME>, ...
 //      ...
+
+dessertsArray.forEach(dessert => {
+    let count = 0;
+    dessertArray =.forEach(dup => {
+        if (dessert === dup) count++= 1;
+    }));
+countedDesserts[dessert] = count;
+objet.values(countedDesserts).forEach((dessertCount, id)=> {
+    const dessertName = Object.keys(countedDesserts[id];
+        rankedDesserts.push({
+            dessertName: dessertName;
+            dessertCount: dessertCount;
+        });
+});
+rankedDesserts.sort((a, b) => a.dessertCount < b.dessertCount ? 1 : -1);
+
+console.log('---------------------------------------');
+console.log('A) Dessert ranked from most to least popular.');
+console.log('--------------------------------------------);
+rankedDesserts(forEach());
+
+console.log('---------------------------------------');
+console.log('B) Who chise the same dessert?');
+console.log('--------------------------------------------);
+
